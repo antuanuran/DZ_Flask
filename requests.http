@@ -1,0 +1,28 @@
+# 1. Создаём Пользователя сайтом
+
+GET http://localhost:8000/api/users/
+
+###
+
+POST http://localhost:8000/api/users/
+Content-Type: application/json
+
+{
+  "username": "Antuan",
+  "password_hash": "qwerty"
+}
+
+###
+# 2. Создаем объявления
+
+GET http://localhost:8000/api/cards/
+
+###
+
+POST http://localhost:8000/api/cards/
+Content-Type: application/json
+
+{
+  "title": "I will sell TV",
+  "user_id": 1
+}
